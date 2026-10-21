@@ -2,6 +2,7 @@ bench/
 runs/
 data/
 scripts/dl_imgur5k.py
+LOCAL.md
 
 __pycache__/
 *.pyc
