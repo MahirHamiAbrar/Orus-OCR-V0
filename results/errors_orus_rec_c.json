@@ -1,0 +1,1825 @@
+{
+ "bnhtrd": {
+  "cer_greedy": 0.0763,
+  "wer_greedy": 0.2709,
+  "cer_lm": 0.0691,
+  "wer_lm": 0.2365,
+  "wer_normalised": 0.2467,
+  "cer_normalised": 0.067,
+  "edit_types": {
+   "insert": 0.16,
+   "replace": 0.525,
+   "delete": 0.315
+  },
+  "errors_by_class": {
+   "bn_consonant": 0.484,
+   "bn_vowel_sign": 0.128,
+   "bn_hasanta": 0.065,
+   "ins:bn_consonant": 0.053,
+   "ins:bn_vowel_sign": 0.048,
+   "digit": 0.038,
+   "space": 0.036,
+   "punct": 0.028,
+   "bn_vowel": 0.023,
+   "bn_other": 0.023,
+   "ins:space": 0.023,
+   "ins:bn_hasanta": 0.021,
+   "latin_upper": 0.013,
+   "ins:bn_other": 0.005,
+   "ins:punct": 0.004,
+   "ins:bn_vowel": 0.004,
+   "latin_lower": 0.001,
+   "ins:latin_lower": 0.001
+  },
+  "error_rate_within_class": {
+   "bn_consonant": 0.072,
+   "bn_vowel_sign": 0.037,
+   "space": 0.017,
+   "bn_hasanta": 0.087,
+   "bn_other": 0.061,
+   "bn_vowel": 0.04,
+   "punct": 0.099,
+   "digit": 0.368
+  },
+  "top_confusions": [
+   [
+    "ব",
+    "র",
+    13
+   ],
+   [
+    "ণ",
+    "ন",
+    11
+   ],
+   [
+    "ম",
+    "স",
+    9
+   ],
+   [
+    "ক",
+    "ব",
+    9
+   ],
+   [
+    "র",
+    "ব",
+    8
+   ],
+   [
+    "স",
+    "গ",
+    7
+   ],
+   [
+    "ব",
+    "ক",
+    6
+   ],
+   [
+    "স",
+    "ম",
+    5
+   ],
+   [
+    "ত",
+    "ড",
+    5
+   ],
+   [
+    "্",
+    "ু",
+    5
+   ],
+   [
+    "জ",
+    "ত",
+    5
+   ],
+   [
+    "য",
+    "র",
+    5
+   ]
+  ],
+  "worst10pct_share_of_errors": 0.33,
+  "cer_by_length": {
+   "10-30": 0.091,
+   "30-60": 0.064,
+   "60-1000": 0.127
+  },
+  "cer_by_conf": {
+   "0.6-0.8": [
+    0.469,
+    5
+   ],
+   "0.8-0.9": [
+    0.1,
+    66
+   ],
+   "0.9-0.95": [
+    0.064,
+    168
+   ],
+   "0.95-1.01": [
+    0.024,
+    61
+   ]
+  },
+  "worst_examples": [
+   [
+    "MUNIR UZ ZAMAN",
+    "Munine us Aman.",
+    0.7351
+   ],
+   [
+    "বিপ্রদাস বড়ুয়া ।",
+    "বিশ্বেদাশ করা ।",
+    0.8032
+   ],
+   [
+    "মুক্তিসাধন ।",
+    "জিসাধন ,",
+    0.7764
+   ],
+   [
+    "স্ত্রী পুত্রসহ করোনা আক্রান্ত গণস্বাস্থ্য কেন্দ্রের প্রতিষ্ঠাতা ও ট্রাস্টি",
+    "ত্রী প্রোলিং করোনা জাগার গাঙ্গাকে কেনের প্রতিষ্ঠাতা ও কান্টি",
+    0.7608
+   ],
+   [
+    "গণস্বাস্থ্য কেন্দ্রের প্রতিষ্ঠাতা ও ট্রাস্টি ডা. জাফরুল্লাহ চৌধুরী বলেন ,",
+    "সাজ কেন্দের প্রতিষ্ঠান এন্টি তা জাফরাল্লাহ চৌধুরী বল্প ।",
+    0.7609
+   ]
+  ]
+ },
+ "banglawriting": {
+  "cer_greedy": 0.1713,
+  "wer_greedy": 0.4665,
+  "cer_lm": 0.147,
+  "wer_lm": 0.3732,
+  "wer_normalised": 0.3756,
+  "cer_normalised": 0.142,
+  "edit_types": {
+   "insert": 0.134,
+   "replace": 0.541,
+   "delete": 0.325
+  },
+  "errors_by_class": {
+   "bn_consonant": 0.524,
+   "bn_vowel_sign": 0.131,
+   "ins:bn_consonant": 0.064,
+   "bn_hasanta": 0.062,
+   "punct": 0.04,
+   "space": 0.04,
+   "ins:bn_vowel_sign": 0.034,
+   "bn_other": 0.03,
+   "bn_vowel": 0.026,
+   "ins:space": 0.018,
+   "digit": 0.011,
+   "ins:bn_hasanta": 0.01,
+   "ins:punct": 0.004,
+   "ins:bn_other": 0.002,
+   "latin_lower": 0.002,
+   "ins:bn_vowel": 0.002
+  },
+  "error_rate_within_class": {
+   "bn_consonant": 0.165,
+   "bn_hasanta": 0.179,
+   "bn_vowel_sign": 0.081,
+   "space": 0.038,
+   "bn_vowel": 0.104,
+   "bn_other": 0.152,
+   "punct": 0.274
+  },
+  "top_confusions": [
+   [
+    "ল",
+    "ন",
+    29
+   ],
+   [
+    "য",
+    "র",
+    18
+   ],
+   [
+    "র",
+    "়",
+    16
+   ],
+   [
+    "ন",
+    "ল",
+    14
+   ],
+   [
+    "ব",
+    "র",
+    14
+   ],
+   [
+    ",",
+    "।",
+    11
+   ],
+   [
+    "ব",
+    "ক",
+    9
+   ],
+   [
+    "ন",
+    "ণ",
+    8
+   ],
+   [
+    "ব",
+    "ন",
+    7
+   ],
+   [
+    "্",
+    "া",
+    7
+   ],
+   [
+    "ম",
+    "স",
+    7
+   ],
+   [
+    "ত",
+    "ভ",
+    7
+   ]
+  ],
+  "worst10pct_share_of_errors": 0.315,
+  "cer_by_length": {
+   "1-10": 0.09,
+   "10-30": 0.144,
+   "30-60": 0.136
+  },
+  "cer_by_conf": {
+   "0-0.6": [
+    0.271,
+    5
+   ],
+   "0.6-0.8": [
+    0.283,
+    59
+   ],
+   "0.8-0.9": [
+    0.128,
+    130
+   ],
+   "0.9-0.95": [
+    0.08,
+    86
+   ],
+   "0.95-1.01": [
+    0.028,
+    20
+   ]
+  },
+  "worst_examples": [
+   [
+    "হয় দেশে রপ্তানি করা",
+    "হয় নেতার মে তাদি দেশে রপ্তানি করা",
+    0.7755
+   ],
+   [
+    "ছাপ ছিল । ঋণি",
+    "ছিল। এ ধর",
+    0.7479
+   ],
+   [
+    "আগের উদাহরনের তুমি যখন তখন",
+    "আহার উদ্যাহারের জুলি সদ্য মার",
+    0.721
+   ],
+   [
+    "কেবল গাই গান ,",
+    "কেবল পাই পরীর জান ।",
+    0.7943
+   ],
+   [
+    "লইয়া গিয়া রুদ্ধ করিয়া রাখিবে এবং কল্যা আমার নিকট উপস্থিত",
+    "নীর নিয়া কন্ধ করা বর্ধিরে এবং করা পরমার নিরাট ডিআর",
+    0.663
+   ]
+  ]
+ },
+ "iiit": {
+  "cer_greedy": 0.1759,
+  "wer_greedy": 0.5967,
+  "cer_lm": 0.1641,
+  "wer_lm": 0.52,
+  "wer_normalised": 0.5192,
+  "cer_normalised": 0.1641,
+  "edit_types": {
+   "replace": 0.587,
+   "insert": 0.099,
+   "delete": 0.314
+  },
+  "errors_by_class": {
+   "bn_consonant": 0.62,
+   "bn_hasanta": 0.102,
+   "bn_vowel_sign": 0.096,
+   "ins:bn_consonant": 0.061,
+   "bn_vowel": 0.036,
+   "bn_other": 0.036,
+   "ins:bn_vowel_sign": 0.017,
+   "ins:bn_hasanta": 0.017,
+   "punct": 0.008,
+   "ins:digit": 0.003,
+   "digit": 0.003,
+   "ins:bn_other": 0.003
+  },
+  "error_rate_within_class": {
+   "bn_consonant": 0.185,
+   "bn_vowel_sign": 0.054,
+   "bn_vowel": 0.134,
+   "bn_hasanta": 0.24,
+   "bn_other": 0.21
+  },
+  "top_confusions": [
+   [
+    "ক",
+    "ব",
+    7
+   ],
+   [
+    "ন",
+    "া",
+    3
+   ],
+   [
+    "গ",
+    "ন",
+    3
+   ],
+   [
+    "ছ",
+    "জ",
+    3
+   ],
+   [
+    "ণ",
+    "ন",
+    3
+   ],
+   [
+    "ব",
+    "র",
+    3
+   ],
+   [
+    "স",
+    "ল",
+    3
+   ],
+   [
+    "্",
+    "ু",
+    3
+   ],
+   [
+    "প",
+    "স",
+    3
+   ],
+   [
+    "প",
+    "গ",
+    3
+   ],
+   [
+    "ন",
+    "স",
+    2
+   ],
+   [
+    "ল",
+    "ন",
+    2
+   ]
+  ],
+  "worst10pct_share_of_errors": 0.399,
+  "cer_by_length": {
+   "1-10": 0.165,
+   "10-30": 0.167
+  },
+  "cer_by_conf": {
+   "0-0.6": [
+    0.758,
+    8
+   ],
+   "0.6-0.8": [
+    0.258,
+    88
+   ],
+   "0.8-0.9": [
+    0.163,
+    92
+   ],
+   "0.9-0.95": [
+    0.065,
+    63
+   ],
+   "0.95-1.01": [
+    0.038,
+    49
+   ]
+  },
+  "worst_examples": [
+   [
+    "এগুতে",
+    "রান্নুরে",
+    0.5365
+   ],
+   [
+    "ঘ-এর",
+    "খব",
+    0.5486
+   ],
+   [
+    "সেতু",
+    "কেন্দু",
+    0.5474
+   ],
+   [
+    "যেহেতু",
+    "সেক্রেত",
+    0.5819
+   ],
+   [
+    "কফির",
+    "বানির",
+    0.7721
+   ]
+  ]
+ },
+ "gnhk": {
+  "cer_greedy": 0.1586,
+  "wer_greedy": 0.4962,
+  "cer_lm": 0.1358,
+  "wer_lm": 0.4222,
+  "wer_normalised": 0.335,
+  "cer_normalised": 0.1143,
+  "edit_types": {
+   "replace": 0.629,
+   "insert": 0.112,
+   "delete": 0.259
+  },
+  "errors_by_class": {
+   "latin_lower": 0.573,
+   "latin_upper": 0.117,
+   "punct": 0.079,
+   "digit": 0.062,
+   "space": 0.058,
+   "ins:latin_lower": 0.047,
+   "ins:punct": 0.027,
+   "ins:space": 0.025,
+   "ins:latin_upper": 0.008,
+   "ins:digit": 0.005
+  },
+  "error_rate_within_class": {
+   "latin_upper": 0.185,
+   "digit": 0.305,
+   "space": 0.057,
+   "latin_lower": 0.109,
+   "punct": 0.318
+  },
+  "top_confusions": [
+   [
+    "o",
+    "e",
+    14
+   ],
+   [
+    "a",
+    "o",
+    10
+   ],
+   [
+    "r",
+    "n",
+    10
+   ],
+   [
+    "o",
+    "a",
+    9
+   ],
+   [
+    "c",
+    "C",
+    8
+   ],
+   [
+    "m",
+    "n",
+    8
+   ],
+   [
+    "f",
+    "p",
+    8
+   ],
+   [
+    "c",
+    "e",
+    7
+   ],
+   [
+    "S",
+    "s",
+    7
+   ],
+   [
+    "e",
+    "a",
+    6
+   ],
+   [
+    "e",
+    "o",
+    6
+   ],
+   [
+    "a",
+    "e",
+    6
+   ]
+  ],
+  "worst10pct_share_of_errors": 0.354,
+  "cer_by_length": {
+   "1-10": 0.282,
+   "10-30": 0.131,
+   "30-60": 0.139
+  },
+  "cer_by_conf": {
+   "0-0.6": [
+    0.872,
+    10
+   ],
+   "0.6-0.8": [
+    0.303,
+    47
+   ],
+   "0.8-0.9": [
+    0.168,
+    109
+   ],
+   "0.9-0.95": [
+    0.078,
+    76
+   ],
+   "0.95-1.01": [
+    0.037,
+    58
+   ]
+  },
+  "worst_examples": [
+   [
+    "time",
+    "Vo",
+    0.4445
+   ],
+   [
+    "in 9k",
+    "",
+    0.0
+   ],
+   [
+    "9k",
+    "It",
+    0.4098
+   ],
+   [
+    "guaranteed",
+    "I",
+    0.2717
+   ],
+   [
+    "kennedy",
+    "I",
+    0.509
+   ]
+  ]
+ },
+ "iam": {
+  "cer_greedy": 0.1436,
+  "wer_greedy": 0.3877,
+  "cer_lm": 0.1243,
+  "wer_lm": 0.3341,
+  "wer_normalised": 0.283,
+  "cer_normalised": 0.1082,
+  "edit_types": {
+   "replace": 0.549,
+   "insert": 0.067,
+   "delete": 0.385
+  },
+  "errors_by_class": {
+   "latin_lower": 0.696,
+   "space": 0.118,
+   "punct": 0.08,
+   "ins:latin_lower": 0.054,
+   "latin_upper": 0.037,
+   "ins:space": 0.009,
+   "digit": 0.003,
+   "ins:punct": 0.002,
+   "ins:digit": 0.001,
+   "ins:latin_upper": 0.001
+  },
+  "error_rate_within_class": {
+   "latin_upper": 0.214,
+   "latin_lower": 0.113,
+   "space": 0.081,
+   "punct": 0.295
+  },
+  "top_confusions": [
+   [
+    "o",
+    "a",
+    30
+   ],
+   [
+    "a",
+    "o",
+    19
+   ],
+   [
+    "m",
+    "n",
+    17
+   ],
+   [
+    "s",
+    "r",
+    16
+   ],
+   [
+    "t",
+    "l",
+    16
+   ],
+   [
+    "a",
+    "e",
+    15
+   ],
+   [
+    "o",
+    "e",
+    15
+   ],
+   [
+    "u",
+    "n",
+    12
+   ],
+   [
+    "e",
+    "o",
+    12
+   ],
+   [
+    "l",
+    "t",
+    11
+   ],
+   [
+    "r",
+    "s",
+    11
+   ],
+   [
+    "u",
+    "a",
+    10
+   ]
+  ],
+  "worst10pct_share_of_errors": 0.374,
+  "cer_by_length": {
+   "10-30": 0.141,
+   "30-60": 0.11,
+   "60-1000": 0.24
+  },
+  "cer_by_conf": {
+   "0-0.6": [
+    0.498,
+    12
+   ],
+   "0.6-0.8": [
+    0.217,
+    44
+   ],
+   "0.8-0.9": [
+    0.115,
+    112
+   ],
+   "0.9-0.95": [
+    0.07,
+    97
+   ],
+   "0.95-1.01": [
+    0.025,
+    35
+   ]
+  },
+  "worst_examples": [
+   [
+    "express their disgust at Sir John's abominable treatment",
+    "gogete ege t hi end taiany",
+    0.2868
+   ],
+   [
+    "suggested having a second party , the following week , he",
+    "use thin and put the tening at to",
+    0.3067
+   ],
+   [
+    "waving , unkissed , from the window . And Dai , on the pavement , knowing in his",
+    "very which for the when to sin, the paint, he in this",
+    0.3644
+   ],
+   [
+    "left behind , isn't it ? Very exasperating for one and all . \"",
+    "of thing then in they wereding or it di \"",
+    0.3879
+   ],
+   [
+    "the remission of sins ' was added . But Absolution remained .",
+    "the months of an \" was at that headline neart",
+    0.3326
+   ]
+  ]
+ },
+ "imgur5k": {
+  "cer_greedy": 0.2016,
+  "wer_greedy": 0.4167,
+  "cer_lm": 0.1898,
+  "wer_lm": 0.3933,
+  "wer_normalised": 0.3497,
+  "cer_normalised": 0.1742,
+  "edit_types": {
+   "replace": 0.642,
+   "delete": 0.3,
+   "insert": 0.058
+  },
+  "errors_by_class": {
+   "latin_lower": 0.613,
+   "latin_upper": 0.235,
+   "punct": 0.062,
+   "ins:latin_lower": 0.041,
+   "digit": 0.033,
+   "ins:punct": 0.012,
+   "ins:space": 0.004
+  },
+  "error_rate_within_class": {
+   "latin_upper": 0.248,
+   "latin_lower": 0.153,
+   "punct": 0.278
+  },
+  "top_confusions": [
+   [
+    "o",
+    "a",
+    3
+   ],
+   [
+    "r",
+    "n",
+    3
+   ],
+   [
+    "n",
+    "s",
+    3
+   ],
+   [
+    "a",
+    "n",
+    2
+   ],
+   [
+    "u",
+    "o",
+    2
+   ],
+   [
+    "S",
+    "s",
+    2
+   ],
+   [
+    "o",
+    "e",
+    2
+   ],
+   [
+    "c",
+    "n",
+    2
+   ],
+   [
+    "u",
+    "a",
+    2
+   ],
+   [
+    "M",
+    "m",
+    2
+   ],
+   [
+    "v",
+    "u",
+    2
+   ],
+   [
+    "i",
+    "o",
+    2
+   ]
+  ],
+  "worst10pct_share_of_errors": 0.519,
+  "cer_by_length": {
+   "1-10": 0.183,
+   "10-30": 0.265
+  },
+  "cer_by_conf": {
+   "0-0.6": [
+    0.645,
+    40
+   ],
+   "0.6-0.8": [
+    0.268,
+    58
+   ],
+   "0.8-0.9": [
+    0.169,
+    51
+   ],
+   "0.9-0.95": [
+    0.084,
+    40
+   ],
+   "0.95-1.01": [
+    0.022,
+    111
+   ]
+  },
+  "worst_examples": [
+   [
+    "Hey",
+    "long.",
+    0.5392
+   ],
+   [
+    "17,",
+    "on",
+    0.3477
+   ],
+   [
+    "Gg",
+    "S",
+    0.2147
+   ],
+   [
+    "Rr",
+    "In",
+    0.4925
+   ],
+   [
+    "K",
+    "k",
+    0.7961
+   ]
+  ]
+ },
+ "prescription": {
+  "cer_greedy": 0.0745,
+  "wer_greedy": 0.2459,
+  "cer_lm": 0.0688,
+  "wer_lm": 0.2295,
+  "wer_normalised": 0.2233,
+  "cer_normalised": 0.0672,
+  "edit_types": {
+   "replace": 0.545,
+   "insert": 0.167,
+   "delete": 0.288
+  },
+  "errors_by_class": {
+   "latin_lower": 0.705,
+   "ins:latin_lower": 0.136,
+   "latin_upper": 0.129,
+   "ins:latin_upper": 0.023,
+   "ins:space": 0.008
+  },
+  "error_rate_within_class": {
+   "latin_upper": 0.055,
+   "latin_lower": 0.058
+  },
+  "top_confusions": [
+   [
+    "f",
+    "t",
+    4
+   ],
+   [
+    "e",
+    "a",
+    3
+   ],
+   [
+    "h",
+    "i",
+    2
+   ],
+   [
+    "e",
+    "i",
+    2
+   ],
+   [
+    "o",
+    "u",
+    2
+   ],
+   [
+    "a",
+    "o",
+    2
+   ],
+   [
+    "F",
+    "P",
+    2
+   ],
+   [
+    "x",
+    "n",
+    2
+   ],
+   [
+    "a",
+    "n",
+    2
+   ],
+   [
+    "t",
+    "h",
+    1
+   ],
+   [
+    "e",
+    "u",
+    1
+   ],
+   [
+    "n",
+    "x",
+    1
+   ]
+  ],
+  "worst10pct_share_of_errors": 0.689,
+  "cer_by_length": {
+   "1-10": 0.073
+  },
+  "cer_by_conf": {
+   "0.6-0.8": [
+    0.286,
+    10
+   ],
+   "0.8-0.9": [
+    0.173,
+    46
+   ],
+   "0.9-0.95": [
+    0.076,
+    66
+   ],
+   "0.95-1.01": [
+    0.032,
+    178
+   ]
+  },
+  "worst_examples": [
+   [
+    "Fexo",
+    "Fendin",
+    0.8612
+   ],
+   [
+    "Montene",
+    "Bacaid",
+    0.9881
+   ],
+   [
+    "Opton",
+    "Nexum",
+    0.935
+   ],
+   [
+    "Nexcap",
+    "Opton",
+    0.9777
+   ],
+   [
+    "Etizin",
+    "Ath",
+    0.611
+   ]
+  ]
+ },
+ "rupom": {
+  "cer_greedy": 0.2888,
+  "wer_greedy": 0.7686,
+  "cer_lm": 0.2584,
+  "wer_lm": 0.622,
+  "wer_normalised": 0.5236,
+  "cer_normalised": 0.2451,
+  "edit_types": {
+   "replace": 0.56,
+   "delete": 0.298,
+   "insert": 0.142
+  },
+  "errors_by_class": {
+   "bn_consonant": 0.518,
+   "bn_vowel_sign": 0.15,
+   "ins:bn_consonant": 0.059,
+   "bn_vowel": 0.049,
+   "bn_hasanta": 0.049,
+   "punct": 0.037,
+   "ins:space": 0.036,
+   "ins:bn_vowel_sign": 0.029,
+   "bn_other": 0.024,
+   "space": 0.022,
+   "ins:bn_hasanta": 0.012,
+   "digit": 0.01,
+   "ins:bn_vowel": 0.003,
+   "ins:bn_other": 0.001,
+   "ins:digit": 0.001,
+   "latin_lower": 0.0,
+   "ins:punct": 0.0
+  },
+  "error_rate_within_class": {
+   "bn_consonant": 0.284,
+   "bn_vowel_sign": 0.162,
+   "space": 0.039,
+   "bn_hasanta": 0.276,
+   "bn_vowel": 0.257,
+   "punct": 0.432,
+   "bn_other": 0.285,
+   "digit": 0.71
+  },
+  "top_confusions": [
+   [
+    "ব",
+    "র",
+    18
+   ],
+   [
+    "ো",
+    "ে",
+    18
+   ],
+   [
+    "ন",
+    "র",
+    17
+   ],
+   [
+    "আ",
+    "া",
+    16
+   ],
+   [
+    "ল",
+    "ন",
+    16
+   ],
+   [
+    "্",
+    "া",
+    13
+   ],
+   [
+    "ব",
+    "ক",
+    13
+   ],
+   [
+    "ত",
+    "র",
+    11
+   ],
+   [
+    "স",
+    "ম",
+    10
+   ],
+   [
+    "ে",
+    "া",
+    10
+   ],
+   [
+    "ভ",
+    "ত",
+    9
+   ],
+   [
+    "ম",
+    "স",
+    9
+   ]
+  ],
+  "worst10pct_share_of_errors": 0.296,
+  "cer_by_length": {
+   "10-30": 0.182,
+   "30-60": 0.264,
+   "60-1000": 0.285
+  },
+  "cer_by_conf": {
+   "0-0.6": [
+    0.51,
+    36
+   ],
+   "0.6-0.8": [
+    0.259,
+    89
+   ],
+   "0.8-0.9": [
+    0.14,
+    71
+   ],
+   "0.9-0.95": [
+    0.099,
+    20
+   ],
+   "0.95-1.01": [
+    0.072,
+    5
+   ]
+  },
+  "worst_examples": [
+   [
+    "আমায়, চেনেনি তো কেউ, দেখেও কতবার তবু দেখেনিতো কেউ",
+    "aযা at erior n",
+    0.1798
+   ],
+   [
+    "দেখা হলনা আলো, সুধাই কেউ বুঝেনি আমায়, চেনেনি তো কেউ,",
+    "কেট ুযাি িে া্",
+    0.1955
+   ],
+   [
+    ", যেন আমার, দেখা হলনা আলো, সুধাই অন্ধকার",
+    "(িনি নর া র্া ্া",
+    0.1525
+   ],
+   [
+    "মামা হওয়ার অনুভূতি",
+    "প্ এবা অরুে্য",
+    0.2819
+   ],
+   [
+    "রাশিয়া ও দক্ষিণে হিমালয়।",
+    "পরিষদ দিত বিয়ে ।",
+    0.4709
+   ]
+  ]
+ },
+ "mixed": {
+  "cer_greedy": 0.1875,
+  "wer_greedy": 0.488,
+  "cer_lm": 0.1665,
+  "wer_lm": 0.4091,
+  "wer_normalised": 0.3962,
+  "cer_normalised": 0.1602,
+  "edit_types": {
+   "insert": 0.09,
+   "replace": 0.6,
+   "delete": 0.31
+  },
+  "errors_by_class": {
+   "latin_lower": 0.406,
+   "bn_consonant": 0.23,
+   "bn_vowel_sign": 0.067,
+   "latin_upper": 0.061,
+   "punct": 0.046,
+   "ins:latin_lower": 0.029,
+   "bn_hasanta": 0.028,
+   "digit": 0.028,
+   "ins:bn_consonant": 0.025,
+   "bn_vowel": 0.02,
+   "ins:bn_vowel_sign": 0.016,
+   "bn_other": 0.015,
+   "space": 0.009,
+   "ins:space": 0.006,
+   "ins:bn_hasanta": 0.006,
+   "ins:punct": 0.005,
+   "ins:bn_vowel": 0.001,
+   "ins:digit": 0.001,
+   "ins:latin_upper": 0.001
+  },
+  "error_rate_within_class": {
+   "bn_vowel": 0.125,
+   "bn_consonant": 0.137,
+   "bn_vowel_sign": 0.078,
+   "space": 0.011,
+   "bn_other": 0.135,
+   "bn_hasanta": 0.16,
+   "latin_upper": 0.36,
+   "latin_lower": 0.228,
+   "punct": 0.371,
+   "digit": 0.388
+  },
+  "top_confusions": [
+   [
+    "a",
+    "o",
+    13
+   ],
+   [
+    "n",
+    "r",
+    11
+   ],
+   [
+    "a",
+    "e",
+    10
+   ],
+   [
+    "o",
+    "a",
+    10
+   ],
+   [
+    "o",
+    "e",
+    8
+   ],
+   [
+    "s",
+    "r",
+    7
+   ],
+   [
+    "d",
+    "t",
+    7
+   ],
+   [
+    "ম",
+    "স",
+    7
+   ],
+   [
+    "s",
+    "S",
+    7
+   ],
+   [
+    "r",
+    "n",
+    7
+   ],
+   [
+    "u",
+    "n",
+    7
+   ],
+   [
+    "ব",
+    "প",
+    6
+   ]
+  ],
+  "worst10pct_share_of_errors": 0.263,
+  "cer_by_length": {
+   "10-30": 0.158,
+   "30-60": 0.168,
+   "60-1000": 0.172
+  },
+  "cer_by_conf": {
+   "0.6-0.8": [
+    0.255,
+    68
+   ],
+   "0.8-0.9": [
+    0.14,
+    182
+   ],
+   "0.9-0.95": [
+    0.084,
+    36
+   ],
+   "0.95-1.01": [
+    0.039,
+    10
+   ]
+  },
+  "worst_examples": [
+   [
+    "হচ্ছে even সবচেয়ে করে",
+    "sen t",
+    0.3
+   ],
+   [
+    "যাইবে Guarantor?",
+    "see rarention",
+    0.551
+   ],
+   [
+    "below করে নম্বরে Fruits had",
+    "করে a ও চর pay had",
+    0.545
+   ],
+   [
+    "it তাদের",
+    "t তাব্দর",
+    0.8923
+   ],
+   [
+    "ও Amodis sincere",
+    "3 Amodes smout",
+    0.7291
+   ]
+  ]
+ },
+ "font": {
+  "cer_greedy": 0.0535,
+  "wer_greedy": 0.1716,
+  "cer_lm": 0.0464,
+  "wer_lm": 0.1398,
+  "wer_normalised": 0.1253,
+  "cer_normalised": 0.0449,
+  "edit_types": {
+   "replace": 0.542,
+   "delete": 0.386,
+   "insert": 0.072
+  },
+  "errors_by_class": {
+   "bn_consonant": 0.405,
+   "latin_lower": 0.169,
+   "bn_vowel_sign": 0.087,
+   "bn_hasanta": 0.085,
+   "punct": 0.062,
+   "bn_vowel": 0.036,
+   "digit": 0.034,
+   "ins:bn_consonant": 0.024,
+   "bn_other": 0.024,
+   "ins:bn_hasanta": 0.021,
+   "space": 0.013,
+   "ins:bn_vowel_sign": 0.013,
+   "latin_upper": 0.013,
+   "ins:latin_lower": 0.011,
+   "ins:punct": 0.002
+  },
+  "error_rate_within_class": {
+   "bn_consonant": 0.073,
+   "bn_vowel_sign": 0.032,
+   "space": 0.005,
+   "bn_hasanta": 0.116,
+   "bn_vowel": 0.088,
+   "bn_other": 0.085,
+   "latin_lower": 0.024,
+   "punct": 0.082,
+   "latin_upper": 0.032,
+   "digit": 0.047
+  },
+  "top_confusions": [
+   [
+    ".",
+    ",",
+    5
+   ],
+   [
+    "্",
+    "া",
+    5
+   ],
+   [
+    "m",
+    "n",
+    4
+   ],
+   [
+    "গ",
+    "প",
+    4
+   ],
+   [
+    "স",
+    "ম",
+    4
+   ],
+   [
+    "র",
+    "ব",
+    4
+   ],
+   [
+    "ব",
+    "র",
+    3
+   ],
+   [
+    "স",
+    "ন",
+    3
+   ],
+   [
+    "য",
+    "ম",
+    3
+   ],
+   [
+    "ত",
+    "ভ",
+    3
+   ],
+   [
+    "আ",
+    "া",
+    3
+   ],
+   [
+    "য",
+    "র",
+    3
+   ]
+  ],
+  "worst10pct_share_of_errors": 0.67,
+  "cer_by_length": {
+   "1-10": 0.024,
+   "10-30": 0.035,
+   "30-60": 0.036,
+   "60-1000": 0.05
+  },
+  "cer_by_conf": {
+   "0.6-0.8": [
+    0.23,
+    11
+   ],
+   "0.8-0.9": [
+    0.084,
+    29
+   ],
+   "0.9-0.95": [
+    0.042,
+    74
+   ],
+   "0.95-1.01": [
+    0.008,
+    182
+   ]
+  },
+  "worst_examples": [
+   [
+    "গ্রুপিং basis আসিয়ান,",
+    "a ta",
+    0.3364
+   ],
+   [
+    "দেশ ও historian পেশায় অবদানের জন্য disproportionately অফ in বাংলাদেশ (আইইবি) staggering",
+    "তার bitorian বার নামের করা deproportionately আয় বাংলাদের সাহার tagring",
+    0.4167
+   ],
+   [
+    "রওশানের ঘনিষ্ঠ বন্ধুদের মতে, \"অন্যরা যখন স্বাচ্ছন্দ্যে জেনারেল মনজুরের সমর্থন ছেড়ে",
+    "বাগানের খনিত বাহুদের মতে, \"অন্যরা যখন প্যান্য কোনাবেল অনুরের স্বর্ন থেকে",
+    0.7323
+   ],
+   [
+    "যার মাতৃনক্ষত্রের আকৃতি",
+    "যার নতুনভারের আকৃতি",
+    0.694
+   ],
+   [
+    "Temp: 169 kg",
+    "Temp: 104 by",
+    0.7752
+   ]
+  ]
+ },
+ "bnprinted": {
+  "cer_greedy": 0.2522,
+  "wer_greedy": 0.4844,
+  "cer_lm": 0.2431,
+  "wer_lm": 0.4432,
+  "wer_normalised": 0.4096,
+  "cer_normalised": 0.2355,
+  "edit_types": {
+   "replace": 0.213,
+   "delete": 0.746,
+   "insert": 0.041
+  },
+  "errors_by_class": {
+   "bn_consonant": 0.457,
+   "bn_vowel_sign": 0.171,
+   "space": 0.083,
+   "bn_hasanta": 0.054,
+   "punct": 0.052,
+   "latin_lower": 0.047,
+   "bn_vowel": 0.032,
+   "digit": 0.031,
+   "bn_other": 0.028,
+   "ins:bn_consonant": 0.016,
+   "ins:bn_vowel_sign": 0.008,
+   "ins:space": 0.007,
+   "ins:bn_hasanta": 0.004,
+   "ins:punct": 0.004,
+   "latin_upper": 0.003,
+   "ins:bn_other": 0.001,
+   "ins:bn_vowel": 0.001
+  },
+  "error_rate_within_class": {
+   "bn_consonant": 0.246,
+   "bn_vowel_sign": 0.173,
+   "space": 0.133,
+   "bn_vowel": 0.195,
+   "bn_hasanta": 0.327,
+   "bn_other": 0.28,
+   "punct": 0.426,
+   "digit": 0.75,
+   "latin_lower": 1.0
+  },
+  "top_confusions": [
+   [
+    "্",
+    "া",
+    10
+   ],
+   [
+    "ভ",
+    "ত",
+    10
+   ],
+   [
+    "!",
+    "।",
+    9
+   ],
+   [
+    "য",
+    "র",
+    8
+   ],
+   [
+    "ব",
+    "র",
+    7
+   ],
+   [
+    "খ",
+    "ব",
+    6
+   ],
+   [
+    "ন",
+    "র",
+    6
+   ],
+   [
+    "ফ",
+    "ক",
+    6
+   ],
+   [
+    "আ",
+    "া",
+    6
+   ],
+   [
+    "গ",
+    "প",
+    6
+   ],
+   [
+    "ি",
+    "ী",
+    5
+   ],
+   [
+    "ক",
+    "ত",
+    5
+   ]
+  ],
+  "worst10pct_share_of_errors": 0.628,
+  "cer_by_length": {
+   "10-30": 0.109,
+   "30-60": 0.125,
+   "60-1000": 0.253
+  },
+  "cer_by_conf": {
+   "0-0.6": [
+    0.644,
+    27
+   ],
+   "0.6-0.8": [
+    0.203,
+    33
+   ],
+   "0.8-0.9": [
+    0.129,
+    63
+   ],
+   "0.9-0.95": [
+    0.088,
+    80
+   ],
+   "0.95-1.01": [
+    0.042,
+    33
+   ]
+  },
+  "worst_examples": [
+   [
+    "সালের করা হয় এবং ২৪ ফেব্রুয়ারি সকালে, শহীদ শফিউর (২২ ফেব্রুয়ারি শহীদ হন) এর পিতা তদারকিতে ছিলেন ইঞ্জিনিয়ার শরফুদ্দিন। ১৯৫২ অনানুষ্ঠানিকভাবে শহীদ মিনারের উদ্বোধন করেন। ২৬ ফেব্রুয়ারি পুলিশ ও সেনাবাহিনী প্রথম শহীদ মিনার ভেঙ্গে ফেলে (৯ম-১০ম বই অনুসারে- ২৪ ফেব্রুয়ারি ভেঙ্গে ফেলে)। এরপর ঢাকা কলেজেও একটি শহীদ মিনার তৈরি করা হয়। এটিও",
+    "",
+    0.0
+   ],
+   [
+    "২০২২ ২. নিফাক বলতে কী বোঝায়? ৩. শাফাআত বলতে কী বোঝায়?",
+    "a ta",
+    0.4593
+   ],
+   [
+    "শহিদ মিনারের নির্মাণ কাজ শুরু হয়। ১৯৫৮ সামরিক আইন জারি করায় কেন্দ্রীয় শহিদ মিনারের কাজ বন্ধ হয়ে যায়। পরবর্তীতে মুল নকশা কেটে- ছেঁটে ১৯৬৩ সালে দ্রুত নির্মাণ কাজ শেষ হয়। এর নকশাকার ছিলেন ভাস্কর হামিদুজ্জাম। ১৯৬৩ সালের ২১ ফেব্রুয়ারি ভাষা আন্দোলনের শহিদ বরকতের মাতা হাসিনা বেগম কর্তৃক উদ্বোধন করা",
+    "a to a n a n a",
+    0.3105
+   ],
+   [
+    "আর্ট স্কুলের বাধা ধরা জীবন তার ভালো লাগেনি। তিনি ছিলেন স্বাধীনতা ও ভব্যত্বে প্রকৃতি। তাই প্রতিষ্ঠানিক শিক্ষা রীতিনীতি মেনে নিতে পারেননি। ১৮৮৩ সালে তিনি খাকসার আন্দোলনে যোগ দিয়েছিলেন।",
+    "র া া",
+    0.1575
+   ],
+   [
+    "সব লোকে কয় লালন কী জাত সংসারে। লালন কয়, জেতের কী রূপ, দেখলাম না এ",
+    "মহারান",
+    0.3794
+   ]
+  ]
+ },
+ "cord_en": {
+  "cer_greedy": 0.1898,
+  "wer_greedy": 0.5394,
+  "cer_lm": 0.2047,
+  "wer_lm": 0.5538,
+  "wer_normalised": 0.3755,
+  "cer_normalised": 0.1637,
+  "edit_types": {
+   "replace": 0.539,
+   "insert": 0.135,
+   "delete": 0.326
+  },
+  "errors_by_class": {
+   "latin_upper": 0.35,
+   "digit": 0.244,
+   "punct": 0.116,
+   "latin_lower": 0.093,
+   "space": 0.063,
+   "ins:space": 0.039,
+   "ins:latin_lower": 0.03,
+   "ins:punct": 0.026,
+   "ins:digit": 0.02,
+   "ins:bn_consonant": 0.01,
+   "ins:latin_upper": 0.006,
+   "ins:bn_vowel_sign": 0.004
+  },
+  "error_rate_within_class": {
+   "digit": 0.16,
+   "latin_upper": 0.235,
+   "space": 0.105,
+   "punct": 0.301,
+   "latin_lower": 0.105
+  },
+  "top_confusions": [
+   [
+    ",",
+    ".",
+    20
+   ],
+   [
+    ".",
+    ",",
+    12
+   ],
+   [
+    "O",
+    "o",
+    11
+   ],
+   [
+    "A",
+    "a",
+    8
+   ],
+   [
+    "M",
+    "H",
+    8
+   ],
+   [
+    "m",
+    "n",
+    7
+   ],
+   [
+    "C",
+    "c",
+    6
+   ],
+   [
+    "E",
+    "e",
+    6
+   ],
+   [
+    ".",
+    " ",
+    6
+   ],
+   [
+    "o",
+    "a",
+    5
+   ],
+   [
+    "I",
+    "T",
+    5
+   ],
+   [
+    "9",
+    "0",
+    5
+   ]
+  ],
+  "worst10pct_share_of_errors": 0.429,
+  "cer_by_length": {
+   "1-10": 0.155,
+   "10-30": 0.206,
+   "30-60": 0.213
+  },
+  "cer_by_conf": {
+   "0-0.6": [
+    0.767,
+    22
+   ],
+   "0.6-0.8": [
+    0.381,
+    68
+   ],
+   "0.8-0.9": [
+    0.151,
+    76
+   ],
+   "0.9-0.95": [
+    0.049,
+    88
+   ],
+   "0.95-1.01": [
+    0.033,
+    46
+   ]
+  },
+  "worst_examples": [
+   [
+    "Total 40,000",
+    "Tata is 100,000 chemes 20,000",
+    0.6511
+   ],
+   [
+    "5183230101 CREDIT CARD 40,150",
+    "-sf",
+    0.2672
+   ],
+   [
+    "+M",
+    "th",
+    0.5463
+   ],
+   [
+    "1X 0",
+    "Tk",
+    0.5139
+   ],
+   [
+    "HPL754DR LUNCH BOX 3P SET W/RED BAG & SP00",
+    "at to to me",
+    0.392
+   ]
+  ]
+ }
+}

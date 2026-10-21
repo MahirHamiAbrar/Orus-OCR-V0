@@ -1,0 +1,101 @@
+{
+ "bnhtrd": {
+  "pages": 30,
+  "ms_p50": 345.3,
+  "ms_p95": 452.9,
+  "stage_ms_p50": {
+   "detect": 76.5,
+   "recognize": 176.0,
+   "handwritten": 76.0,
+   "total": 345.5
+  },
+  "cer": 0.1284,
+  "wer": 0.3236,
+  "cer_with_newlines": 0.1288,
+  "line_count_err": 0.0345,
+  "lang_acc": 0.9667,
+  "hand_acc": 1.0
+ },
+ "banglawriting": {
+  "pages": 30,
+  "ms_p50": 279.3,
+  "ms_p95": 356.6,
+  "stage_ms_p50": {
+   "detect": 93.5,
+   "recognize": 132.0,
+   "handwritten": 51.5,
+   "total": 279.5
+  },
+  "lang_acc": 1.0,
+  "hand_acc": 1.0
+ },
+ "gnhk": {
+  "pages": 30,
+  "ms_p50": 258.2,
+  "ms_p95": 496.9,
+  "stage_ms_p50": {
+   "detect": 73.0,
+   "recognize": 90.0,
+   "handwritten": 74.0,
+   "total": 258.0
+  },
+  "lang_acc": 1.0,
+  "hand_acc": 0.9333
+ },
+ "cmater_mixed": {
+  "pages": 30,
+  "ms_p50": 432.8,
+  "ms_p95": 584.6,
+  "stage_ms_p50": {
+   "detect": 84.0,
+   "recognize": 265.0,
+   "handwritten": 91.5,
+   "total": 432.5
+  },
+  "lang_acc": 0.9667,
+  "hand_acc": 1.0
+ },
+ "swapnil_bn_print": {
+  "pages": 30,
+  "ms_p50": 277.0,
+  "ms_p95": 346.4,
+  "stage_ms_p50": {
+   "detect": 68.0,
+   "recognize": 63.5,
+   "handwritten": 141.0,
+   "total": 276.5
+  },
+  "cer": 0.0438,
+  "wer": 0.1822,
+  "cer_with_newlines": 0.0439,
+  "line_count_err": 0.0195,
+  "lang_acc": 0.9,
+  "hand_acc": 0.9333
+ },
+ "cord_en_print": {
+  "pages": 30,
+  "ms_p50": 133.4,
+  "ms_p95": 213.6,
+  "stage_ms_p50": {
+   "detect": 61.5,
+   "recognize": 29.0,
+   "handwritten": 36.5,
+   "total": 133.5
+  },
+  "lang_acc": 0.9667,
+  "hand_acc": 0.9667
+ },
+ "synth_pictures": {
+  "pages": 30,
+  "ms_p50": 203.1,
+  "ms_p95": 289.4,
+  "stage_ms_p50": {
+   "detect": 69.5,
+   "recognize": 35.5,
+   "handwritten": 86.5,
+   "total": 203.0
+  },
+  "lines_on_pictures": 0,
+  "lines": 402
+ }
+}

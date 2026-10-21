@@ -1,0 +1,15 @@
+bench/
+runs/
+data/
+scripts/dl_imgur5k.py
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+.venv/
+venv/
+.idea/
+.vscode/
+*.swp

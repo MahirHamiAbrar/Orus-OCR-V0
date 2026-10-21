@@ -1,0 +1,59 @@
+{
+ "bnhtrd": {
+  "pages": 30,
+  "ms_p50": 696.1,
+  "ms_p95": 900.0,
+  "cer": 0.14,
+  "wer": 0.3333,
+  "cer_with_newlines": 0.1403,
+  "line_count_err": 0.0362,
+  "lang_acc": 0.9667,
+  "hand_acc": 1.0
+ },
+ "banglawriting": {
+  "pages": 30,
+  "ms_p50": 553.3,
+  "ms_p95": 750.8,
+  "lang_acc": 1.0,
+  "hand_acc": 1.0
+ },
+ "gnhk": {
+  "pages": 30,
+  "ms_p50": 441.4,
+  "ms_p95": 910.1,
+  "lang_acc": 1.0,
+  "hand_acc": 0.9333
+ },
+ "cmater_mixed": {
+  "pages": 30,
+  "ms_p50": 868.3,
+  "ms_p95": 1500.4,
+  "lang_acc": 0.9667,
+  "hand_acc": 1.0
+ },
+ "swapnil_bn_print": {
+  "pages": 30,
+  "ms_p50": 746.9,
+  "ms_p95": 937.4,
+  "cer": 0.0453,
+  "wer": 0.1844,
+  "cer_with_newlines": 0.0455,
+  "line_count_err": 0.0207,
+  "lang_acc": 0.9,
+  "hand_acc": 0.9333
+ },
+ "cord_en_print": {
+  "pages": 30,
+  "ms_p50": 265.0,
+  "ms_p95": 432.0,
+  "lang_acc": 0.9667,
+  "hand_acc": 0.9667
+ },
+ "synth_pictures": {
+  "pages": 30,
+  "ms_p50": 419.8,
+  "ms_p95": 790.4,
+  "lines_on_pictures": 0,
+  "lines": 402
+ }
+}

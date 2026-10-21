@@ -1,0 +1,248 @@
+orus bnhtrd {'pages': 30, 'ms_p50': 345.3, 'ms_p95': 452.9, 'stage_ms_p50': {'detect': 76.5, 'recognize': 176.0, 'handwritten': 76.0, 'total': 345.5}, 'cer': 0.1284, 'wer': 0.3236, 'cer_with_newlines': 0.1288, 'line_count_err': 0.0345, 'lang_acc': 0.9667, 'hand_acc': 1.0}
+orus banglawriting {'pages': 30, 'ms_p50': 279.3, 'ms_p95': 356.6, 'stage_ms_p50': {'detect': 93.5, 'recognize': 132.0, 'handwritten': 51.5, 'total': 279.5}, 'lang_acc': 1.0, 'hand_acc': 1.0}
+orus gnhk {'pages': 30, 'ms_p50': 258.2, 'ms_p95': 496.9, 'stage_ms_p50': {'detect': 73.0, 'recognize': 90.0, 'handwritten': 74.0, 'total': 258.0}, 'lang_acc': 1.0, 'hand_acc': 0.9333}
+orus cmater_mixed {'pages': 30, 'ms_p50': 432.8, 'ms_p95': 584.6, 'stage_ms_p50': {'detect': 84.0, 'recognize': 265.0, 'handwritten': 91.5, 'total': 432.5}, 'lang_acc': 0.9667, 'hand_acc': 1.0}
+orus swapnil_bn_print {'pages': 30, 'ms_p50': 277.0, 'ms_p95': 346.4, 'stage_ms_p50': {'detect': 68.0, 'recognize': 63.5, 'handwritten': 141.0, 'total': 276.5}, 'cer': 0.0438, 'wer': 0.1822, 'cer_with_newlines': 0.0439, 'line_count_err': 0.0195, 'lang_acc': 0.9, 'hand_acc': 0.9333}
+orus cord_en_print {'pages': 30, 'ms_p50': 133.4, 'ms_p95': 213.6, 'stage_ms_p50': {'detect': 61.5, 'recognize': 29.0, 'handwritten': 36.5, 'total': 133.5}, 'lang_acc': 0.9667, 'hand_acc': 0.9667}
+orus synth_pictures {'pages': 30, 'ms_p50': 203.1, 'ms_p95': 289.4, 'stage_ms_p50': {'detect': 69.5, 'recognize': 35.5, 'handwritten': 86.5, 'total': 203.0}, 'lines_on_pictures': 0, 'lines': 402}
+bnhtrd 300
+banglawriting 300
+iiit 300
+gnhk 300
+iam 300
+imgur5k 300
+prescription 300
+rupom 221
+bnprinted 236
+cord_en 300
+mixed 300
+font 300
+orus bnhtrd 0.0689 0.2352 5.5 ms
+orus banglawriting 0.1472 0.3742 10.7 ms
+orus iiit 0.1618 0.5167 4.3 ms
+orus gnhk 0.1358 0.4222 5.0 ms
+orus iam 0.1242 0.3345 8.1 ms
+orus imgur5k 0.1898 0.3933 1.5 ms
+orus prescription 0.0688 0.2295 0.6 ms
+orus rupom 0.2578 0.622 9.8 ms
+orus mixed 0.1665 0.4091 7.5 ms
+orus font 0.0462 0.1404 2.0 ms
+orus bnprinted 0.243 0.4428 6.3 ms
+orus cord_en 0.2047 0.5538 3.9 ms
+orus bnhtrd 0.0687 0.2347 6.5 ms
+orus banglawriting 0.1471 0.3737 11.8 ms
+orus iiit 0.1623 0.5167 4.5 ms
+orus gnhk 0.1355 0.4214 5.9 ms
+orus iam 0.1242 0.3345 9.2 ms
+orus imgur5k 0.1898 0.3933 1.8 ms
+orus prescription 0.0688 0.2295 0.9 ms
+orus rupom 0.2581 0.6233 10.8 ms
+orus mixed 0.166 0.4085 8.7 ms
+orus font 0.0462 0.1404 3.0 ms
+orus bnprinted 0.2428 0.4423 7.3 ms
+orus cord_en 0.2049 0.5549 4.8 ms
+indra bnhtrd 0.846 0.9843 25.9 ms
+indra banglawriting 0.9144 0.9858 22.5 ms
+indra iiit 0.9873 1.07 10.7 ms
+indra gnhk 0.2072 0.5374 17.9 ms
+indra iam 0.1869 0.4922 17.1 ms
+indra imgur5k 0.3516 0.5767 8.0 ms
+indra prescription 0.5344 0.9344 8.2 ms
+indra rupom 0.9676 1.0042 12.5 ms
+indra mixed 0.726 0.9172 22.4 ms
+indra font 0.2519 0.4195 13.8 ms
+indra bnprinted 0.6985 0.8633 20.6 ms
+indra cord_en 0.219 0.5971 12.0 ms
+bnhtrd 300
+banglawriting 300
+iiit 300
+gnhk 300
+iam 300
+imgur5k 300
+prescription 300
+rupom 221
+mixed 300
+font 300
+bnprinted 236
+cord_en 300
+
+== bnhtrd (300 lines)
+  cer_greedy: 0.0763
+  wer_greedy: 0.2709
+  cer_lm: 0.0691
+  wer_lm: 0.2365
+  wer_normalised: 0.2467
+  cer_normalised: 0.067
+  edit_types: {'insert': 0.16, 'replace': 0.525, 'delete': 0.315}
+  errors_by_class: {'bn_consonant': 0.484, 'bn_vowel_sign': 0.128, 'bn_hasanta': 0.065, 'ins:bn_consonant': 0.053, 'ins:bn_vowel_sign': 0.048, 'digit': 0.038, 'space': 0.036, 'punct': 0.028, 'bn_vowel': 0.023, 'bn_other': 0.023, 'ins:space': 0.023, 'ins:bn_hasanta': 0.021, 'latin_upper': 0.013, 'ins:bn_other': 0.005, 'ins:punct': 0.004, 'ins:bn_vowel': 0.004, 'latin_lower': 0.001, 'ins:latin_lower': 0.001}
+  error_rate_within_class: {'bn_consonant': 0.072, 'bn_vowel_sign': 0.037, 'space': 0.017, 'bn_hasanta': 0.087, 'bn_other': 0.061, 'bn_vowel': 0.04, 'punct': 0.099, 'digit': 0.368}
+  top_confusions: [('ব', 'র', 13), ('ণ', 'ন', 11), ('ম', 'স', 9), ('ক', 'ব', 9), ('র', 'ব', 8), ('স', 'গ', 7), ('ব', 'ক', 6), ('স', 'ম', 5), ('ত', 'ড', 5), ('্', 'ু', 5), ('জ', 'ত', 5), ('য', 'র', 5)]
+  worst10pct_share_of_errors: 0.33
+  cer_by_length: {'10-30': 0.091, '30-60': 0.064, '60-1000': 0.127}
+  cer_by_conf: {'0.6-0.8': [0.469, 5], '0.8-0.9': [0.1, 66], '0.9-0.95': [0.064, 168], '0.95-1.01': [0.024, 61]}
+
+== banglawriting (300 lines)
+  cer_greedy: 0.1713
+  wer_greedy: 0.4665
+  cer_lm: 0.147
+  wer_lm: 0.3732
+  wer_normalised: 0.3756
+  cer_normalised: 0.142
+  edit_types: {'insert': 0.134, 'replace': 0.541, 'delete': 0.325}
+  errors_by_class: {'bn_consonant': 0.524, 'bn_vowel_sign': 0.131, 'ins:bn_consonant': 0.064, 'bn_hasanta': 0.062, 'punct': 0.04, 'space': 0.04, 'ins:bn_vowel_sign': 0.034, 'bn_other': 0.03, 'bn_vowel': 0.026, 'ins:space': 0.018, 'digit': 0.011, 'ins:bn_hasanta': 0.01, 'ins:punct': 0.004, 'ins:bn_other': 0.002, 'latin_lower': 0.002, 'ins:bn_vowel': 0.002}
+  error_rate_within_class: {'bn_consonant': 0.165, 'bn_hasanta': 0.179, 'bn_vowel_sign': 0.081, 'space': 0.038, 'bn_vowel': 0.104, 'bn_other': 0.152, 'punct': 0.274}
+  top_confusions: [('ল', 'ন', 29), ('য', 'র', 18), ('র', '়', 16), ('ন', 'ল', 14), ('ব', 'র', 14), (',', '।', 11), ('ব', 'ক', 9), ('ন', 'ণ', 8), ('ব', 'ন', 7), ('্', 'া', 7), ('ম', 'স', 7), ('ত', 'ভ', 7)]
+  worst10pct_share_of_errors: 0.315
+  cer_by_length: {'1-10': 0.09, '10-30': 0.144, '30-60': 0.136}
+  cer_by_conf: {'0-0.6': [0.271, 5], '0.6-0.8': [0.283, 59], '0.8-0.9': [0.128, 130], '0.9-0.95': [0.08, 86], '0.95-1.01': [0.028, 20]}
+
+== iiit (300 lines)
+  cer_greedy: 0.1759
+  wer_greedy: 0.5967
+  cer_lm: 0.1641
+  wer_lm: 0.52
+  wer_normalised: 0.5192
+  cer_normalised: 0.1641
+  edit_types: {'replace': 0.587, 'insert': 0.099, 'delete': 0.314}
+  errors_by_class: {'bn_consonant': 0.62, 'bn_hasanta': 0.102, 'bn_vowel_sign': 0.096, 'ins:bn_consonant': 0.061, 'bn_vowel': 0.036, 'bn_other': 0.036, 'ins:bn_vowel_sign': 0.017, 'ins:bn_hasanta': 0.017, 'punct': 0.008, 'ins:digit': 0.003, 'digit': 0.003, 'ins:bn_other': 0.003}
+  error_rate_within_class: {'bn_consonant': 0.185, 'bn_vowel_sign': 0.054, 'bn_vowel': 0.134, 'bn_hasanta': 0.24, 'bn_other': 0.21}
+  top_confusions: [('ক', 'ব', 7), ('ন', 'া', 3), ('গ', 'ন', 3), ('ছ', 'জ', 3), ('ণ', 'ন', 3), ('ব', 'র', 3), ('স', 'ল', 3), ('্', 'ু', 3), ('প', 'স', 3), ('প', 'গ', 3), ('ন', 'স', 2), ('ল', 'ন', 2)]
+  worst10pct_share_of_errors: 0.399
+  cer_by_length: {'1-10': 0.165, '10-30': 0.167}
+  cer_by_conf: {'0-0.6': [0.758, 8], '0.6-0.8': [0.258, 88], '0.8-0.9': [0.163, 92], '0.9-0.95': [0.065, 63], '0.95-1.01': [0.038, 49]}
+
+== gnhk (300 lines)
+  cer_greedy: 0.1586
+  wer_greedy: 0.4962
+  cer_lm: 0.1358
+  wer_lm: 0.4222
+  wer_normalised: 0.335
+  cer_normalised: 0.1143
+  edit_types: {'replace': 0.629, 'insert': 0.112, 'delete': 0.259}
+  errors_by_class: {'latin_lower': 0.573, 'latin_upper': 0.117, 'punct': 0.079, 'digit': 0.062, 'space': 0.058, 'ins:latin_lower': 0.047, 'ins:punct': 0.027, 'ins:space': 0.025, 'ins:latin_upper': 0.008, 'ins:digit': 0.005}
+  error_rate_within_class: {'latin_upper': 0.185, 'digit': 0.305, 'space': 0.057, 'latin_lower': 0.109, 'punct': 0.318}
+  top_confusions: [('o', 'e', 14), ('a', 'o', 10), ('r', 'n', 10), ('o', 'a', 9), ('c', 'C', 8), ('m', 'n', 8), ('f', 'p', 8), ('c', 'e', 7), ('S', 's', 7), ('e', 'a', 6), ('e', 'o', 6), ('a', 'e', 6)]
+  worst10pct_share_of_errors: 0.354
+  cer_by_length: {'1-10': 0.282, '10-30': 0.131, '30-60': 0.139}
+  cer_by_conf: {'0-0.6': [0.872, 10], '0.6-0.8': [0.303, 47], '0.8-0.9': [0.168, 109], '0.9-0.95': [0.078, 76], '0.95-1.01': [0.037, 58]}
+
+== iam (300 lines)
+  cer_greedy: 0.1436
+  wer_greedy: 0.3877
+  cer_lm: 0.1243
+  wer_lm: 0.3341
+  wer_normalised: 0.283
+  cer_normalised: 0.1082
+  edit_types: {'replace': 0.549, 'insert': 0.067, 'delete': 0.385}
+  errors_by_class: {'latin_lower': 0.696, 'space': 0.118, 'punct': 0.08, 'ins:latin_lower': 0.054, 'latin_upper': 0.037, 'ins:space': 0.009, 'digit': 0.003, 'ins:punct': 0.002, 'ins:digit': 0.001, 'ins:latin_upper': 0.001}
+  error_rate_within_class: {'latin_upper': 0.214, 'latin_lower': 0.113, 'space': 0.081, 'punct': 0.295}
+  top_confusions: [('o', 'a', 30), ('a', 'o', 19), ('m', 'n', 17), ('s', 'r', 16), ('t', 'l', 16), ('a', 'e', 15), ('o', 'e', 15), ('u', 'n', 12), ('e', 'o', 12), ('l', 't', 11), ('r', 's', 11), ('u', 'a', 10)]
+  worst10pct_share_of_errors: 0.374
+  cer_by_length: {'10-30': 0.141, '30-60': 0.11, '60-1000': 0.24}
+  cer_by_conf: {'0-0.6': [0.498, 12], '0.6-0.8': [0.217, 44], '0.8-0.9': [0.115, 112], '0.9-0.95': [0.07, 97], '0.95-1.01': [0.025, 35]}
+
+== imgur5k (300 lines)
+  cer_greedy: 0.2016
+  wer_greedy: 0.4167
+  cer_lm: 0.1898
+  wer_lm: 0.3933
+  wer_normalised: 0.3497
+  cer_normalised: 0.1742
+  edit_types: {'replace': 0.642, 'delete': 0.3, 'insert': 0.058}
+  errors_by_class: {'latin_lower': 0.613, 'latin_upper': 0.235, 'punct': 0.062, 'ins:latin_lower': 0.041, 'digit': 0.033, 'ins:punct': 0.012, 'ins:space': 0.004}
+  error_rate_within_class: {'latin_upper': 0.248, 'latin_lower': 0.153, 'punct': 0.278}
+  top_confusions: [('o', 'a', 3), ('r', 'n', 3), ('n', 's', 3), ('a', 'n', 2), ('u', 'o', 2), ('S', 's', 2), ('o', 'e', 2), ('c', 'n', 2), ('u', 'a', 2), ('M', 'm', 2), ('v', 'u', 2), ('i', 'o', 2)]
+  worst10pct_share_of_errors: 0.519
+  cer_by_length: {'1-10': 0.183, '10-30': 0.265}
+  cer_by_conf: {'0-0.6': [0.645, 40], '0.6-0.8': [0.268, 58], '0.8-0.9': [0.169, 51], '0.9-0.95': [0.084, 40], '0.95-1.01': [0.022, 111]}
+
+== prescription (300 lines)
+  cer_greedy: 0.0745
+  wer_greedy: 0.2459
+  cer_lm: 0.0688
+  wer_lm: 0.2295
+  wer_normalised: 0.2233
+  cer_normalised: 0.0672
+  edit_types: {'replace': 0.545, 'insert': 0.167, 'delete': 0.288}
+  errors_by_class: {'latin_lower': 0.705, 'ins:latin_lower': 0.136, 'latin_upper': 0.129, 'ins:latin_upper': 0.023, 'ins:space': 0.008}
+  error_rate_within_class: {'latin_upper': 0.055, 'latin_lower': 0.058}
+  top_confusions: [('f', 't', 4), ('e', 'a', 3), ('h', 'i', 2), ('e', 'i', 2), ('o', 'u', 2), ('a', 'o', 2), ('F', 'P', 2), ('x', 'n', 2), ('a', 'n', 2), ('t', 'h', 1), ('e', 'u', 1), ('n', 'x', 1)]
+  worst10pct_share_of_errors: 0.689
+  cer_by_length: {'1-10': 0.073}
+  cer_by_conf: {'0.6-0.8': [0.286, 10], '0.8-0.9': [0.173, 46], '0.9-0.95': [0.076, 66], '0.95-1.01': [0.032, 178]}
+
+== rupom (221 lines)
+  cer_greedy: 0.2888
+  wer_greedy: 0.7686
+  cer_lm: 0.2584
+  wer_lm: 0.622
+  wer_normalised: 0.5236
+  cer_normalised: 0.2451
+  edit_types: {'replace': 0.56, 'delete': 0.298, 'insert': 0.142}
+  errors_by_class: {'bn_consonant': 0.518, 'bn_vowel_sign': 0.15, 'ins:bn_consonant': 0.059, 'bn_vowel': 0.049, 'bn_hasanta': 0.049, 'punct': 0.037, 'ins:space': 0.036, 'ins:bn_vowel_sign': 0.029, 'bn_other': 0.024, 'space': 0.022, 'ins:bn_hasanta': 0.012, 'digit': 0.01, 'ins:bn_vowel': 0.003, 'ins:bn_other': 0.001, 'ins:digit': 0.001, 'latin_lower': 0.0, 'ins:punct': 0.0}
+  error_rate_within_class: {'bn_consonant': 0.284, 'bn_vowel_sign': 0.162, 'space': 0.039, 'bn_hasanta': 0.276, 'bn_vowel': 0.257, 'punct': 0.432, 'bn_other': 0.285, 'digit': 0.71}
+  top_confusions: [('ব', 'র', 18), ('ো', 'ে', 18), ('ন', 'র', 17), ('আ', 'া', 16), ('ল', 'ন', 16), ('্', 'া', 13), ('ব', 'ক', 13), ('ত', 'র', 11), ('স', 'ম', 10), ('ে', 'া', 10), ('ভ', 'ত', 9), ('ম', 'স', 9)]
+  worst10pct_share_of_errors: 0.296
+  cer_by_length: {'10-30': 0.182, '30-60': 0.264, '60-1000': 0.285}
+  cer_by_conf: {'0-0.6': [0.51, 36], '0.6-0.8': [0.259, 89], '0.8-0.9': [0.14, 71], '0.9-0.95': [0.099, 20], '0.95-1.01': [0.072, 5]}
+
+== mixed (300 lines)
+  cer_greedy: 0.1875
+  wer_greedy: 0.488
+  cer_lm: 0.1665
+  wer_lm: 0.4091
+  wer_normalised: 0.3962
+  cer_normalised: 0.1602
+  edit_types: {'insert': 0.09, 'replace': 0.6, 'delete': 0.31}
+  errors_by_class: {'latin_lower': 0.406, 'bn_consonant': 0.23, 'bn_vowel_sign': 0.067, 'latin_upper': 0.061, 'punct': 0.046, 'ins:latin_lower': 0.029, 'bn_hasanta': 0.028, 'digit': 0.028, 'ins:bn_consonant': 0.025, 'bn_vowel': 0.02, 'ins:bn_vowel_sign': 0.016, 'bn_other': 0.015, 'space': 0.009, 'ins:space': 0.006, 'ins:bn_hasanta': 0.006, 'ins:punct': 0.005, 'ins:bn_vowel': 0.001, 'ins:digit': 0.001, 'ins:latin_upper': 0.001}
+  error_rate_within_class: {'bn_vowel': 0.125, 'bn_consonant': 0.137, 'bn_vowel_sign': 0.078, 'space': 0.011, 'bn_other': 0.135, 'bn_hasanta': 0.16, 'latin_upper': 0.36, 'latin_lower': 0.228, 'punct': 0.371, 'digit': 0.388}
+  top_confusions: [('a', 'o', 13), ('n', 'r', 11), ('a', 'e', 10), ('o', 'a', 10), ('o', 'e', 8), ('s', 'r', 7), ('d', 't', 7), ('ম', 'স', 7), ('s', 'S', 7), ('r', 'n', 7), ('u', 'n', 7), ('ব', 'প', 6)]
+  worst10pct_share_of_errors: 0.263
+  cer_by_length: {'10-30': 0.158, '30-60': 0.168, '60-1000': 0.172}
+  cer_by_conf: {'0.6-0.8': [0.255, 68], '0.8-0.9': [0.14, 182], '0.9-0.95': [0.084, 36], '0.95-1.01': [0.039, 10]}
+
+== font (300 lines)
+  cer_greedy: 0.0535
+  wer_greedy: 0.1716
+  cer_lm: 0.0464
+  wer_lm: 0.1398
+  wer_normalised: 0.1253
+  cer_normalised: 0.0449
+  edit_types: {'replace': 0.542, 'delete': 0.386, 'insert': 0.072}
+  errors_by_class: {'bn_consonant': 0.405, 'latin_lower': 0.169, 'bn_vowel_sign': 0.087, 'bn_hasanta': 0.085, 'punct': 0.062, 'bn_vowel': 0.036, 'digit': 0.034, 'ins:bn_consonant': 0.024, 'bn_other': 0.024, 'ins:bn_hasanta': 0.021, 'space': 0.013, 'ins:bn_vowel_sign': 0.013, 'latin_upper': 0.013, 'ins:latin_lower': 0.011, 'ins:punct': 0.002}
+  error_rate_within_class: {'bn_consonant': 0.073, 'bn_vowel_sign': 0.032, 'space': 0.005, 'bn_hasanta': 0.116, 'bn_vowel': 0.088, 'bn_other': 0.085, 'latin_lower': 0.024, 'punct': 0.082, 'latin_upper': 0.032, 'digit': 0.047}
+  top_confusions: [('.', ',', 5), ('্', 'া', 5), ('m', 'n', 4), ('গ', 'প', 4), ('স', 'ম', 4), ('র', 'ব', 4), ('ব', 'র', 3), ('স', 'ন', 3), ('য', 'ম', 3), ('ত', 'ভ', 3), ('আ', 'া', 3), ('য', 'র', 3)]
+  worst10pct_share_of_errors: 0.67
+  cer_by_length: {'1-10': 0.024, '10-30': 0.035, '30-60': 0.036, '60-1000': 0.05}
+  cer_by_conf: {'0.6-0.8': [0.23, 11], '0.8-0.9': [0.084, 29], '0.9-0.95': [0.042, 74], '0.95-1.01': [0.008, 182]}
+
+== bnprinted (236 lines)
+  cer_greedy: 0.2522
+  wer_greedy: 0.4844
+  cer_lm: 0.2431
+  wer_lm: 0.4432
+  wer_normalised: 0.4096
+  cer_normalised: 0.2355
+  edit_types: {'replace': 0.213, 'delete': 0.746, 'insert': 0.041}
+  errors_by_class: {'bn_consonant': 0.457, 'bn_vowel_sign': 0.171, 'space': 0.083, 'bn_hasanta': 0.054, 'punct': 0.052, 'latin_lower': 0.047, 'bn_vowel': 0.032, 'digit': 0.031, 'bn_other': 0.028, 'ins:bn_consonant': 0.016, 'ins:bn_vowel_sign': 0.008, 'ins:space': 0.007, 'ins:bn_hasanta': 0.004, 'ins:punct': 0.004, 'latin_upper': 0.003, 'ins:bn_other': 0.001, 'ins:bn_vowel': 0.001}
+  error_rate_within_class: {'bn_consonant': 0.246, 'bn_vowel_sign': 0.173, 'space': 0.133, 'bn_vowel': 0.195, 'bn_hasanta': 0.327, 'bn_other': 0.28, 'punct': 0.426, 'digit': 0.75, 'latin_lower': 1.0}
+  top_confusions: [('্', 'া', 10), ('ভ', 'ত', 10), ('!', '।', 9), ('য', 'র', 8), ('ব', 'র', 7), ('খ', 'ব', 6), ('ন', 'র', 6), ('ফ', 'ক', 6), ('আ', 'া', 6), ('গ', 'প', 6), ('ি', 'ী', 5), ('ক', 'ত', 5)]
+  worst10pct_share_of_errors: 0.628
+  cer_by_length: {'10-30': 0.109, '30-60': 0.125, '60-1000': 0.253}
+  cer_by_conf: {'0-0.6': [0.644, 27], '0.6-0.8': [0.203, 33], '0.8-0.9': [0.129, 63], '0.9-0.95': [0.088, 80], '0.95-1.01': [0.042, 33]}
+
+== cord_en (300 lines)
+  cer_greedy: 0.1898
+  wer_greedy: 0.5394
+  cer_lm: 0.2047
+  wer_lm: 0.5538
+  wer_normalised: 0.3755
+  cer_normalised: 0.1637
+  edit_types: {'replace': 0.539, 'insert': 0.135, 'delete': 0.326}
+  errors_by_class: {'latin_upper': 0.35, 'digit': 0.244, 'punct': 0.116, 'latin_lower': 0.093, 'space': 0.063, 'ins:space': 0.039, 'ins:latin_lower': 0.03, 'ins:punct': 0.026, 'ins:digit': 0.02, 'ins:bn_consonant': 0.01, 'ins:latin_upper': 0.006, 'ins:bn_vowel_sign': 0.004}
+  error_rate_within_class: {'digit': 0.16, 'latin_upper': 0.235, 'space': 0.105, 'punct': 0.301, 'latin_lower': 0.105}
+  top_confusions: [(',', '.', 20), ('.', ',', 12), ('O', 'o', 11), ('A', 'a', 8), ('M', 'H', 8), ('m', 'n', 7), ('C', 'c', 6), ('E', 'e', 6), ('.', ' ', 6), ('o', 'a', 5), ('I', 'T', 5), ('9', '0', 5)]
+  worst10pct_share_of_errors: 0.429
+  cer_by_length: {'1-10': 0.155, '10-30': 0.206, '30-60': 0.213}
+  cer_by_conf: {'0-0.6': [0.767, 22], '0.6-0.8': [0.381, 68], '0.8-0.9': [0.151, 76], '0.9-0.95': [0.049, 88], '0.95-1.01': [0.033, 46]}
+ANALYSIS_DONE

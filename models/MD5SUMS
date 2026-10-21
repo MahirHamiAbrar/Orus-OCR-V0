@@ -1,0 +1,7 @@
+467eabdeae59e1bc1cef3013c0ab586b  det.onnx
+4ed6020bfbb1cd1cac7757bcab80ef53  orus_lm.npz
+b37ba92dc232930bf842d08220783cc3  orus_pic.onnx
+a4e5b5dc13b586eafb02342480b48dcd  orus_rec.onnx
+e246344d7a199d2ae0c2f6ceacab5179  orus_rec.pt
+f8c4d3902b00dfa81d4ccaf0fde602e5  v2_teff.json
+46b75bf53c75836951ae89557161b0e7  v2_teff.onnx

@@ -1,0 +1,36 @@
+MIT License (Non-Commercial)
+
+Copyright (c) 2026 Mahir Hami Abrar
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction for NON-COMMERCIAL purposes only,
+including without limitation the rights to use, copy, modify, merge, publish,
+distribute, and/or sell copies of the Software, subject to the following
+conditions:
+
+1. The above copyright notice and this permission notice shall be included
+   in all copies or substantial portions of the Software.
+
+2. The Software, and any derivative work, may not be used for commercial
+   purposes. Commercial purposes include, without limitation, any use that
+   is intended for or directed toward commercial advantage or monetary
+   compensation.
+
+The above permission is granted in accordance with the upstream licenses of:
+
+- Indra OCR (`datalab-to/indra-ocr`, modified OpenRAIL-M: research and
+  small-company use; commercial use is not granted by the upstream).
+- Research-only datasets used during training, including without limitation
+  IAM, BanglaWriting, IMGUR5K, IIIT Bengali handwriting, BN-HTRd, GNHK, CORD,
+  Swapnil and Doctor's prescriptions datasets. These datasets place their own
+  restrictions on derivatives; consult each dataset's license before any
+  redistribution or downstream use.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
