@@ -25,7 +25,7 @@ import pyarrow.parquet as pq
 from build_data import hsplit
 from ocr_model import canon, encode
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # sub-project root (data/ links to the main project data)
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # sub-project root
 RAW, BENCH = f"{ROOT}/data/raw", f"{ROOT}/data/bench_raw"
 OUT = f"{ROOT}/data/ocr"
 LINE_H = int(os.environ.get("ORUS_H", "32"))        # recognizer line height in px (ink map = 3 * LINE_H tall)

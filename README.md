@@ -2,7 +2,7 @@
 
 A small, CPU-fast OCR for **Bangla, English and mixed Bangla+English** pages, handwriting first. For each page it returns the language (`bn` / `en` / `bn+en`), whether it is **handwritten** (Yes/No), and the **text with its structure** (line breaks, indentation, blank lines). Text inside photos and charts is ignored.
 
-This repo is a complete, frozen snapshot of Orus-OCR-0.1: the code that produced the model, the released weights, the training recipe, the results and the documentation. Later releases (Orus-OCR-1.0-alpha and beyond) are developed separately and will be published under their own versions.
+This repo is a complete, frozen snapshot of Orus-OCR-0.1: the code that produced the model, the released weights, the training recipe, the results and the documentation. It stays fixed, so the numbers and the weights keep working as published.
 
 > Released under MIT (Non-Commercial). See `LICENSE`. Upstream notice: the released `det.onnx` comes from Indra OCR (`datalab-to/indra-ocr`, modified OpenRAIL-M: research and small-company use; commercial use not granted by the upstream). Training used research-only datasets (IAM, BanglaWriting, IMGUR5K, and others); consult each dataset's license before redistribution.
 
@@ -32,7 +32,11 @@ for line in r["lines"]:          # bbox, text, conf, lang
     if line["conf"] < 0.8: ...   # unreliable line: conf >= 0.95 has 1-4% CER, < 0.6 has 27-87%
 ```
 
-Requirements: Python 3.10, `onnxruntime`, `opencv-python`, `numpy`, `rapidfuzz`, `indra-ocr` (pip; provides preprocessing, detector decoding, deskew and the LM beam search), `torch` (only for the handwritten flag's tile code and for training). Inference runs fully on CPU through ONNX Runtime.
+Requirements: Python 3.10, `onnxruntime`, `opencv-python`, `numpy`, `rapidfuzz`, `indra-ocr` (pip; provides preprocessing, detector decoding, deskew and the LM beam search), `torch` and `timm` (the handwritten flag's tile code). Inference runs fully on CPU through ONNX Runtime.
+
+```bash
+pip install onnxruntime opencv-python numpy rapidfuzz indra-ocr torch timm
+```
 
 ## Layout
 
@@ -40,16 +44,11 @@ Requirements: Python 3.10, `onnxruntime`, `opencv-python`, `numpy`, `rapidfuzz`,
 |---|---|
 | `run.py` | inference CLI (uses `models/`) |
 | `train.sh` | full training recipe as stages: `./train.sh data synth lm A B1 B3 distill C pic export bench` |
-| `orus/` | frozen code: `ocr.py` (pipeline), `ocr_model.py` (network), `ocr_data.py` (datasets → line stores), `ocr_synth.py` (synthetic lines), `ocr_train.py` (training), `ocr_lm.py`, `ocr_pic.py`, `ocr_distill.py`, `ocr_bench.py`, `ocr_eval.py`, `ocr_errors.py`, `ocr_det.py`, plus `tiles.py`, `train.py`, `render_printed.py`, `build_data.py` from the main project |
+| `orus/` | frozen code: `ocr.py` (pipeline), `ocr_model.py` (network), `ocr_data.py` (datasets → line stores), `ocr_synth.py` (synthetic lines), `ocr_train.py` (training), `ocr_lm.py`, `ocr_pic.py`, `ocr_distill.py`, `ocr_bench.py`, `ocr_eval.py`, `ocr_errors.py`, `ocr_det.py`, plus `tiles.py`, `train.py`, `render_printed.py` and `build_data.py` |
 | `models/` | released weights + `MD5SUMS` (never written by the scripts) |
+| `fonts/` | the Bangla font the `--demo` self-check renders with |
 | `docs/` | documentation, below |
 | `results/` | benchmark / page-evaluation / error-analysis JSON for the released model, Indra and PaddleOCR-VL |
-
-Not in this repo (development-only, intentionally excluded from the public release):
-
-- `bench/` — frozen line test sets (12 sets, pickles). Held privately for now; not shipped with the model.
-- `runs/` — intermediate training checkpoints (stages A, B1, B2, B3, C) and their training logs. Reproducible from `train.sh`.
-- `data/` — symlink to the main project's raw datasets and line stores. Datasets are research-only and not cleared for redistribution.
 
 ## Documentation
 
@@ -58,7 +57,7 @@ Not in this repo (development-only, intentionally excluded from the public relea
 3. [docs/03_benchmarks.md](docs/03_benchmarks.md) — all numbers so far: line and page benchmarks, speed, sizes, comparison with Indra, PaddleOCR-VL and published state of the art; strengths and weaknesses.
 4. [docs/04_training.md](docs/04_training.md) — training recipe: data preparation, synthetic data, stages A → B1 → B3 → C, distillation, picture net, LM, export, hardware and timings, how to reproduce.
 
-Earlier working reports (kept as written): `docs/orus_report_v1.md`, `docs/orus_report_v2.md`, `docs/orus_weaknesses.md`, `docs/sota_ocr_wer.md`, `docs/indra_arch.md`.
+Earlier reports: `docs/orus_report_v1.md`, `docs/orus_report_v2.md`, `docs/orus_weaknesses.md`, `docs/sota_ocr_cer_wer.md`, `docs/indra_arch.md`.
 
 ## Links
 

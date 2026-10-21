@@ -2,7 +2,7 @@
 
 Everything below runs from the repo root with `./train.sh <stage> ...`. Each stage writes to `runs/`; `models/` holds the frozen release and is never written.
 
-> **Reproducibility note (public release):** the original training run's `runs/` checkpoints, the `bench/` test sets, the `data/` directory (raw research-only datasets and line stores) and `scripts/dl_imgur5k.py` are **intentionally not** in this public repo. The recipe below is preserved as-is for historical reference; to actually re-run training, the artifacts above need to be available locally. Released weights in `models/` reproduce the **inference** path (`python run.py`) without any of them.
+> **Reproducibility note:** the training recipe below is preserved as written for historical reference, but the stage checkpoints, the frozen test sets and the raw datasets are not part of this public repo. The released weights in `models/` reproduce the **inference** path (`python run.py`) without any of them.
 
 ## 4.1 Environment and safety
 
@@ -16,7 +16,7 @@ Everything below runs from the repo root with `./train.sh <stage> ...`. Each sta
 
 ## 4.2 Data preparation (`./train.sh data`)
 
-1. **Raw datasets** go under `data/raw/` (see `docs/01_research_method.md` §1.4 for the list; download notes in the main project's `info/datasets.md`; `scripts/dl_imgur5k.py` fetches IMGUR5K with md5 checks).
+1. **Raw datasets** go under `data/raw/` (see `docs/01_research_method.md` §1.4 for the list; `scripts/dl_imgur5k.py` fetches IMGUR5K with md5 checks).
 2. `orus/ocr_data.py pages` converts every source into `data/ocr/pages/<src>.jsonl`.
    - Line boxes come from the dataset annotations.
    - For BanglaWriting and GNHK, lines are grouped from word boxes, and the word boxes are kept.

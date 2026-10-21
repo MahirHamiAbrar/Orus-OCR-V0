@@ -15,7 +15,7 @@ import numpy as np
 
 from ocr_model import CHARS, canon, encode
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # sub-project root (data/ links to the main project data)
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # sub-project root
 BITS = 11
 D = 0.7
 

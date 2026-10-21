@@ -19,7 +19,7 @@ import cv2
 import numpy as np
 from rapidfuzz.distance import Levenshtein
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # sub-project root (data/ links to the main project data)
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # sub-project root
 B = f"{ROOT}/bench"                                   # frozen 0.1-alpha test sets (copied 2026-10-21)
 SETS = ["bnhtrd", "banglawriting", "iiit", "gnhk", "iam", "imgur5k", "prescription", "rupom", "mixed", "font",
         "bnprinted", "cord_en"]

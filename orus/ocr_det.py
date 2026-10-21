@@ -15,7 +15,7 @@ import time
 import cv2
 import numpy as np
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # sub-project root (data/ links to the main project data)
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # sub-project root
 PAGES = ["bnhtrd", "gnhk", "banglawriting"]
 
 

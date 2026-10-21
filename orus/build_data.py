@@ -18,7 +18,7 @@ import pyarrow.parquet as pq
 import render_printed
 import tiles as T
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # sub-project root (data/ links to the main project data)
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # sub-project root
 RAW = f"{ROOT}/data/raw"
 OUT = f"{ROOT}/data/tiles"
 MAX_TILES_TRAIN = 32         # per page cap, keeps big pages from dominating (and RAM bounded)

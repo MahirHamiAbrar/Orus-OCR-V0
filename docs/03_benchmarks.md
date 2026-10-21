@@ -215,4 +215,4 @@ On real BN-HTRd pages, Orus (12.8% page CER at 1.3M parameters) is better than G
 - Prescription drug-name capture with human review.
 - Anything where per-line confidence can route hard lines to a person or a bigger model.
 
-Not fit for: unattended transcription that needs CER < 5% on handwriting, receipts, or digit-heavy content such as amounts, phone numbers or arithmetic. Those are the targets of Orus-OCR-1.0-alpha.
+Not fit for: unattended transcription that needs CER < 5% on handwriting, receipts, or digit-heavy content such as amounts, phone numbers or arithmetic. This release does not reach that accuracy.

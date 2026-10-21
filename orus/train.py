@@ -19,7 +19,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # sub-project root (data/ links to the main project data)
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # sub-project root
 TILES = f"{ROOT}/data/tiles"
 MEAN, STD = 0.5, 0.25
 GROUP_CAP = 40000   # tiles per (source,label) group in RAM; 15 GB box

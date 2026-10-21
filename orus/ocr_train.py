@@ -22,7 +22,7 @@ from rapidfuzz.distance import Levenshtein
 
 from ocr_model import CHARS, NAME, RecNet, adapt, decode, encode, load_indra
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # sub-project root (data/ links to the main project data)
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # sub-project root
 REC = f"{ROOT}/data/ocr/rec"
 # share of each training batch per source (renormalised over the sources present)
 SOURCE_W = dict(synth_font=0.22, synth_stitch=0.18, bnhtrd=0.13, iiit=0.10, banglawriting=0.05, gnhk=0.07,

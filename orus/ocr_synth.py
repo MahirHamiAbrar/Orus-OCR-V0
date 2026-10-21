@@ -25,7 +25,7 @@ from PIL import Image, ImageDraw, ImageFont
 import render_printed as RP
 from ocr_model import canon, encode
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # sub-project root (data/ links to the main project data)
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # sub-project root
 OUT = f"{ROOT}/data/ocr"
 BN_DIG = "০১২৩৪৫৬৭৮৯"
 IS_BN = re.compile(r"[ঀ-৿]")

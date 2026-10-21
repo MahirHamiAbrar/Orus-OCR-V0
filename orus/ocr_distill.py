@@ -18,7 +18,7 @@ import zlib
 import cv2
 import numpy as np
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # sub-project root (data/ links to the main project data)
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # sub-project root
 BENCH = f"{ROOT}/data/bench_raw"
 OUT = f"{ROOT}/data/ocr/distill"
 

@@ -17,7 +17,7 @@ import time
 import cv2
 import numpy as np
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # sub-project root (data/ links to the main project data)
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # sub-project root
 NAME = "Orus-OCR-0.1"
 BN = re.compile(r"[ঀ-৿]")
 EN = re.compile(r"[A-Za-z]")
@@ -289,7 +289,7 @@ def export(ckpt, out=None):
         assert agree > (0.999 if p == out else 0.97)
 
 
-def demo():
+def demo(release=None):
     """Self-check: language rules, assembler structure, and (if a model exists) a rendered mixed page."""
     assert language("আমি rice খাই and tea") == "bn+en" and language("hello world") == "en" and language("আমি ভাত") == "bn"
     L = [dict(bbox=[10, 10, 300, 30], text="Shopping list"), dict(bbox=[30, 40, 200, 60], text="1. চাল"),
@@ -298,14 +298,19 @@ def demo():
     assert t.split("\n")[0] == "Shopping list" and t.split("\n")[1].startswith(" ") and "" in t.split("\n"), t
     print(t)
     try:
-        o = OCR()
+        o = OCR(release=release) if release else OCR()
     except StopIteration:
         print("no trained recognizer yet: model check skipped")
         return
     from PIL import Image, ImageDraw, ImageFont
+    font = next((p for p in (f"{ROOT}/fonts/HindSiliguri-Regular.ttf",
+                              f"{ROOT}/data/fonts/bn/HindSiliguri-Regular.ttf") if os.path.exists(p)), None)
+    if font is None:
+        print("no Bangla font for the rendered page: model check skipped")
+        return
     im = Image.new("L", (900, 420), 255)
     dr = ImageDraw.Draw(im)
-    f = ImageFont.truetype(f"{ROOT}/data/fonts/bn/HindSiliguri-Regular.ttf", 34, layout_engine=ImageFont.Layout.RAQM)
+    f = ImageFont.truetype(font, 34, layout_engine=ImageFont.Layout.RAQM)
     gt = ["আজকের বাজার list", "১. চাল ৫ kg", "২. ডিম 12 টি"]
     for i, s in enumerate(gt):
         dr.text((40 + 40 * (i > 0), 40 + 70 * i), s, font=f, fill=0)
